@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CustomKanban</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="text_planing">Запланированы</string>
+    <string name="text_inprogress">В процессе</string>
+    <string name="text_done">Выполненые</string>
+    <string name="text_canceled">Отклонены</string>
+
+
+</resources>

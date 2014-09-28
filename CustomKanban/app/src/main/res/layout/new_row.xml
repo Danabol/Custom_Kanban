@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/title"
+
+        android:text="НАЗВАНИЕ"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="20dip"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/creationdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:text="ДАТА"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/priority"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/creationdate"
+        android:text="Приоритет : 5"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+
+    <ImageButton
+        android:id="@+id/moveleft"
+        android:layout_below="@id/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@android:drawable/ic_media_rew"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        />
+
+    <ImageButton
+        android:id="@+id/moveright"
+        android:layout_below="@id/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_media_ff"
+
+        android:layout_marginTop="10dp"
+
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageButton
+        android:id="@+id/showdescription"
+        android:layout_below="@id/moveleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/arrow_down_float"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+
+       />
+
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showdescription"
+        android:textColor="#343434"
+        android:textSize="0dip"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+     />
+
+    <Button
+        android:id="@+id/remove"
+        android:layout_below="@id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Удалить"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/remove"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Редактировать"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Отменить"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
